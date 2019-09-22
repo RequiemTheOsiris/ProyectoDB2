@@ -1,0 +1,310 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: #00FFFF;
+	color: #000;
+}
+#contenedor{
+	width: 100%;
+	max-width: 200%;
+	margin: auto;
+	/* margin-top: 0px;
+	margin-bottom: 20px;
+	border-radius: 20px; */
+	overflow: hidden;
+}
+
+
+
+
+
+header{
+	height: auto;
+	background: #fff;
+}
+header h1{
+	font-size: 40px;
+	text-align: center;
+	line-height: 50px;
+}
+
+
+
+
+
+nav{
+	background: #1E90FF;
+	height: 60px;
+}
+nav h2{
+	font-size: 40px;
+	text-align: center;
+	line-height: 60px; 
+}
+#menu{
+	padding-top: 20px;
+	padding-left: 10px;
+	margin: auto;
+}
+#menu ul a{
+	color: #000;
+	text-decoration: none;
+	font: bold 16px Verdana;
+	padding: 10px 20px 8px 20px;
+	background: #fff;
+	border-bottom: 5px solid transparent; 
+	transition: border-bottom .7s;
+	-webkit-transition: border-bottom .7s;
+	-moz-transition: border-bottom .7s;
+	-o-transition: border-bottom .7s;
+}
+#menu ul a:hover{
+	border-bottom: 9px solid #000; 
+}
+label{
+	color: #1E90FF;
+}
+#edad{
+	color: #000;
+	font-size: 25px;
+}
+
+
+
+
+#Prueba {
+	flex: 1;
+	height: auto;
+	margin: 0.5rem;
+	color: black;
+	background-color: #B0E0E6;
+}
+#Peque {
+	flex: 2;
+	height: auto;
+	margin: 0.5rem;
+	color: black;
+	background-color: #B0E0E6;
+}
+#ventanaModal{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	position: fixed;
+	background-image: url(../css/fondoModal.png);
+	top: 0;
+	left: 0;
+	display: none;
+}
+#ventanaBlanca{
+	width: 300px;
+	height: auto;
+	padding: 25px;
+	background-color: white;
+	color: #666;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin-left: -175px;
+	margin-top: -175px;
+}
+#cerrar{
+	color: red;
+	font-weight: 1000;
+	text-align: right;
+}
+
+
+
+
+#ventanaModalActuailizar{
+	width: 100%;
+	height: 300%;
+	color: #fff;
+	position: absolute;
+	background-image: url(../css/fondoModal.png);
+	top: 0;
+	left: 0;
+	display: none;
+}
+#ventanaBlancaActuailizar{
+	width: 300px;
+	height: auto;
+	padding: 25px;
+	background-color: white;
+	color: #666;
+	top: 15%;
+	left: 50%;
+	position: absolute;
+	margin-left: -175px;
+	margin-top: -175px;
+}
+#cerrarActuailizar{
+	color: red;
+	font-weight: 1000;
+	text-align: right;
+}
+
+
+
+
+#ventanaModalReporte{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	position: fixed;
+	background-image: url(../css/fondoModal.png);
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
+}
+#ventanaBlancaReporte{
+	width: auto;
+	height: auto;
+	padding: 25px;
+	background-color: white;
+	color: #666;
+	top: 50%;
+	left: 27%;
+	position: absolute;
+	margin-left: -175px;
+	margin-top: -175px;
+}
+#cerrarReporte{
+	color: red;
+	font-weight: 1000;
+	text-align: right;
+}
+
+
+
+#contenido{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #fff;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	
+	display: flex;
+	flex-wrap: wrap;
+}
+#contenedor table{
+    margin: auto;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#contenedor table td{
+    border: 1px solid #000;
+    padding: 5px;
+}
+#contenido h2{
+	font-size: 40px;
+	text-align: center;
+	line-height: 50px;
+}
+#contenido .gbRegistrar{
+	border: #000 1px solid; 
+	background-color:#fff;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px; 
+}
+#contenido .gbRegistrar .tituloGbRegistrar{
+	color: #000;
+}
+#contenido .gbRegistrar .asterisco{
+	color: red;
+}
+
+
+
+
+footer{
+	background: #191970;
+	clear:  both;
+}
+footer h2{
+	font-size: 40px;
+	text-align: center;
+	padding: 20px;
+	font-style: italic;
+	color: #fff;
+}
+
+
+
+@media screen and (max-width: 800px){
+	#contenido{
+		width: 100%;
+	}
+	aside{
+		width:  100%;
+	}
+	header h1{
+		font-size: 30px;
+		line-height: 100px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#contenedor{
+		width: 100%;
+		border-radius: 0px;
+	}
+	aside{
+		display: none;
+	}
+	header h1{
+		font-size: 22px;
+		line-height: 80px;
+	}
+}
+
+
+
+
+
+.mascara {
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	padding-top: 100px; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4); 
+   }
+   .contenido {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	text-align: center;
+   }
+   .cerrar {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+   }
+   .cerrar:hover,
+   .cerrar:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+   }

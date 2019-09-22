@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>ADMINISTRADOR</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css/estilos.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-xcal=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <input type="hidden" id="CiEmpleado">
+	<div id="contenedor">
+		<header>
+			<h1>Bienbenidos a mi pagina web</h1>
+		</header>
+		<nav>
+            <!-- <section id="menu">
+				<ul>
+					<a href="#">ESTUDIANTE</a>
+					<a href="../Mensualidad">INSCRIPCION</a>
+					<a href="../Factura">FACTURACION</a>
+                    <a href="../rfid/">RFID</a>
+                    <a href="../../controllers/Usuario/LogicaSerrarCesion.php">CerrarSecion</a>
+				</ul>
+			</section> -->
+		</nav>
+		<section id="contenido">
+            <div id="Prueba">
+                <form><br>
+                    <h1>Buscar Empleado</h1> <br> 
+                    <label id="Nombre"></label><br>
+                    <input type="search" id="search" >
+                    <button type="submit">
+                        Buscar
+                    </button>
+                </form>
+                <br>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td>Ci</td>
+                            <td>Nombre</td>
+                            <td>Cargo</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tasks">
+
+                    </tbody>
+                </table><br><br>
+            </div>
+            <div id="Prueba">
+                <form><br>
+                    <h1>Horas por Dia</h1> <br> 
+                    <label id="FechaDia"></label><br>
+                    <input type="date" id="FechaDiaHoras" >
+                    <button type="submit">
+                        
+                        Buscar
+                    </button>
+                </form>
+                <br>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td>Ingreso</td>
+                            <td>Salida</td>
+                            <td>Total Horas</td>
+                        </tr>
+                    </thead>
+                    <tbody id="DiaHoras">
+
+                    </tbody>
+                </table><br><br>
+            </div>
+            <div id="Prueba">
+                <form><br>
+                    <h1>Horas por Semana</h1> <br> 
+                    <label id="FechaSemana"></label><br>
+                    Inicio:
+                    <input type="date" id="FechaInicio" ><br>
+                    Fin:
+                    <input type="date" id="FechaFin" ><br>
+                    <button type="submit">
+                        Buscar
+                    </button>
+                </form>
+                <br>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td>Cargo</td>
+                            <td>Lunes</td>
+                            <td>Martes</td>
+                            <td>Miercoles</td>
+                            <td>Jueves</td>
+                            <td>Viernes</td>
+                            <td>Total Horas</td>
+                        </tr>
+                    </thead>
+                    <tbody id="SemanaHoras">
+
+                    </tbody>
+                </table><br><br>
+            </div>
+            <!-- <div id="Prueba">
+                <form><br>
+                    <h1>Horas por Mez</h1> <br> 
+                    <select name="select">
+                        <option value="01">Enero</option> 
+                        <option value="02">Febrero</option>
+                        <option value="03">Marzo</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Mayo</option>
+                        <option value="06">Junio</option>
+                        <option value="07">Julio</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                    <button type="submit">
+                        Buscar
+                    </button>
+                </form>
+                <br>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td>Ingreso</td>
+                            <td>Salida</td>
+                            <td>Total Horas</td>
+                        </tr>
+                    </thead>
+                    <tbody id="Horas">
+
+                    </tbody>
+                </table><br><br>
+            </div> -->
+            <script src="../../lib/jquery-3.4.1.min.js"></script>
+            <script type="text/javascript" src="app.js"></script>
+		</section>
+		<footer>
+			<h2>Pie_Pag.</h2>
+		</footer>
+	</div>
+</body>
+</html>
